@@ -1,16 +1,16 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
 
-body{
-    background:linear-gradient(to left, #201b2c, #ad3ecd);
+body {
+    background: linear-gradient(to left, #201b2c, #ad3ecd);
 }
 
-header{
+header {
     background-color: lightgray;
-    display:flex;
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     padding: 16px;
     margin-bottom: 16px;
 }
@@ -20,23 +20,23 @@ ul {
     height: 100%;
     align-items: center;
 }
-  
+
 nav ul li {
     padding-left: 16px;
     list-style-type: none;
 }
 
-.container{
+.container {
     width: 80vw;
     height: 80vh;
     background-color: red;
     display: flex;
     flex-wrap: wrap;
     margin: 100px;
-    padding:30px;
+    padding: 30px;
 }
 
-.form_top{
+.form_top {
     width: 80vw;
     height: 20vh;
     background-color: blue;
@@ -44,29 +44,29 @@ nav ul li {
     flex-direction: column;
 }
 
-.form_left{
+.form_left {
     width: 40vw;
     align-items: center;
     justify-content: center;
     background-color: #ad3ecd;
 }
 
-.form_right{
+.form_right {
     width: 40vw;
     align-items: center;
     background-color: aqua;
 }
 
-.textfield label{
+.textfield label {
     display: flex;
 }
 
-.textfield input{
+.textfield input {
     width: 80%;
     border-radius: 10px;
 }
 
-.top_input input{
+.top_input input {
     display: flex;
     border-radius: 10px;
     width: 50%;
