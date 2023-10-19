@@ -7,6 +7,6 @@ Membros da equipe
 
 •	Cesar Alberto
 •	Lauro Mello
-•	Paulo
+•	Paulo Henrique Luiz
 •	Tadeu Buelo
 
