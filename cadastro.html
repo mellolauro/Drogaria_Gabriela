@@ -1,126 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/cadastro.css">
-    <title>Cadastro</title>
+    <title>Drogaria ProzTech - Login</title>
 </head>
-
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="">Home</a></li>
-                <li><a href="">Serviços</a></li>
-                <li><a href=""></a></li>
-                <li><a href=""></a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <form action="">
-            <div class="container">
-                <div class="form_top">
-                    <div>
-                        <h2>Dados Cadastrais</h2>
-                    </div>
-                    <div class="top_input">
-                        <label for="">E-mail</label>
-                        <input type="text" id="" name="" placeholder="" required>
-                    </div>
-
-                    <div class="top_input">
-                        <label for="">Confirmar E-mail</label>
-                        <input type="text" id="" name="" placeholder="" required>
-                    </div>
-
-                    <div class="top_input">
-                        <label for="">Senha</label>
-                        <input type="text" id="" name="" placeholder="" required>
-                    </div>
-
-                    <div class="top_input">
-                        <label for="">Confirmar Senha</label>
-                        <input type="text" id="" name="" placeholder="" required>
-                    </div>
+    <div class="main-login">
+        <div class="right-login">
+            <a href="index.html"><img src="./assets/logo_dg.jpg.jpg" class="left-img" alt="Logo"></a>
+        </div>
+        <div class="right-login">
+            <div class="card-login">
+                <h1>Cadastro</h1>
+                <div class="text-field">
+                    <label for="email">E-mail</label>
+                    <input type="email" name="email" placeholder="Digite seu E-mail">
                 </div>
-                <div class="form_right">
-                    <div>
-                        <h2>Dados Pessoais</h2>
-                    </div>
-                    <div class="textfield">
-                        <label for="">Nome</label>
-                        <input type="text" id="" name="" placeholder="" required>
-                    </div>
 
-                    <div class="textfield">
-                        <label for="">Sobrenome</label>
-                        <input type="text" id="" name="" placeholder="" required>
-                    </div>
-
-                    <div class="textfield">
-                        <label for="">Gênero</label>
-                        <select name="" id="">
-                            <option value="masculino">Masculino</option>
-                            <option value="feminino">Feminino</option>
-                        </select>
-                    </div> <!--Aqui vamos ter o menu de sexo-->
-
-                    <div class="textfield">
-                        <label for="">CPF</label>
-                        <input type="text" id="" name="" placeholder="" required>
-                    </div>
-
-                    <div class="textfield">
-                        <label for="">Data de Nascimento</label>
-                        <input type="text" id="" name="" placeholder="" required>
-                    </div>
-
-                    <div class="textfield">
-                        <label for="">Celular</label>
-                        <input type="text" id="" name="" placeholder="" required>
-                    </div>
+                <div class="text-field">
+                    <label for="confirmar-email">Confirmar E-mail</label>
+                    <input type="email" name="confirmar-email" placeholder="Confirme seu E-mail">
                 </div>
-                <div class="form_left">
-                    <div>
-                        <h2>Endereço</h2>
-                    </div>
-                    <div class="textfield">
-                        <label for="">CEP</label>
-                        <input type="text" id="" name="" placeholder="" required>
-                    </div>
 
-                    <div class="textfield">
-                        <label for="">Rua</label>
-                        <input type="text" id="" name="" placeholder="" required>
-                    </div>
-
-                    <div class="textfield">
-                        <label for="">Número</label>
-                        <input type="text" id="" name="" placeholder="" required>
-                    </div>
-
-                    <div class="textfield">
-                        <label for="">Bairro</label>
-                        <input type="text" id="" name="" placeholder="" required>
-                    </div>
-
-                    <div class="textfield">
-                        <label for="">Cidade</label>
-                        <input type="text" id="" name="" placeholder="" required>
-                    </div>
-
-                    <div class="textfield">
-                        <label for="">Estado</label>
-                        <input type="text" id="" name="" placeholder="" required>
-                    </div>
+                <div class="text-field">
+                    <label for="Senha">Senha</label>
+                    <input type="password" name="senha" placeholder="Digite sua Senha">
                 </div>
+
+                <div class="text-field">
+                    <label for="confirmar-senha">Confirmar Senha</label>
+                    <input type="password" name="confirmar-senha" placeholder="Confirme sua Senha">
+                </div>
+                <button class="btn-login">Confirmar</button>
+                <div>
+                    <small>Já tem conta?<a href="login.html">Login</a></small>
+                </div>
+                
             </div>
-        </form>
-    </main>
-
+        </div>
+    </div>
 </body>
-
 </html>

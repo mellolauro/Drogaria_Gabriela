@@ -8,7 +8,7 @@
 .main-login{
     width: 100vw;
     height: 100vh;
-    background:linear-gradient(to left, #201b2c, #ad3ecd);
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -26,7 +26,7 @@
 .left-img{
     width: 35vw;
     border-radius: 25% 10%;
-    box-shadow: 0px 10px 40px #daf4fb;
+    /*box-shadow: 0px 10px 40px #daf4fb;*/
 }
 
 .right-login{
@@ -46,7 +46,7 @@
     padding: 30px 35px;
     background: black;
     border-radius: 20px;
-    box-shadow: 0px 10px 40px #daf4fb;
+    /*box-shadow: 0px 10px 40px #daf4fb;*/
 }
 
 .card-login h1{
@@ -72,7 +72,7 @@
     padding: 15px;
     background:#daf4fb;
     font-size: 12pt;
-    box-shadow: 0px 10px 40px #daf4fb;
+    /*box-shadow: 0px 10px 40px #daf4fb;*/
     outline: none;
     box-sizing: border-box;
 }
@@ -99,7 +99,7 @@
     letter-spacing: 3px;
     background: #ad3ecd;
     cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #daf4fb;
+    /*box-shadow: 0px 10px 40px -12px #daf4fb;*/
 }
 
 small{
