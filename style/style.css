@@ -2,9 +2,10 @@
     --main-color: #00c9a5;
     --nav-color: #00afa5;
     --bg-color: #e8f3f1;
-    --black: #2f4858;
+    --black: #3dd3cb;
     --card-color: #4a0f8d;
     --border: .1rem solid var(--card-color)
+
 }
 
 * {
@@ -25,7 +26,7 @@ html {
 }
 
 body {
-    background-color: var(--bg-color);
+    background-color: var(--black);
 }
 
 .btn {
@@ -43,6 +44,8 @@ section {
     padding: 2rem 7%;
 }
 
+
+
 .btn:hover {
     letter-spacing: .2rem;
 }
@@ -50,18 +53,18 @@ section {
 .title {
     text-shadow: 2px 2px 0 var(--card-color), -2px -2px 0 var(--card-color), -2px -2px 0 var(--card-color);
     text-align: center;
-    color: #fff;
+    color: black;
     text-transform: uppercase;
     padding: 3.5rem 0;
     font-size: 4rem;
 }
 
 .title span {
-    color: var(--main-color)
+    color: var(--card-color)
 }
 
 .header {
-    background-color: rgb(2, 2, 39);
+    background-color: rgb(56, 56, 243);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -146,7 +149,15 @@ section {
 .header .search-form label:hover {
     color: var(--main-color);
 }
-
+video{
+    border-radius: 15px ;
+    border: solid 2px;
+    max-width: 100%;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    
+}
 /* cartsection*/
 
 .header .cart-items-container {
@@ -214,7 +225,7 @@ section {
     min-height: 80vh;
     margin-top: 20vh;
     background-color:aqua;
-    background-image: url("assets/ideogram\ \(1\).jpeg");
+    background-image: url("assets/2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -226,6 +237,17 @@ section {
     margin-top: 20vh;
     background-color:aqua;
     background-image: url("assets/farmaceutica-jovem-hispanica-sorrindo-confiante-em-pe-com-gesto-de-bracos-cruzados-na-farmacia.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: right;
+}
+.home2{
+    display: flex;
+    align-items: center;
+    min-height: 80vh;
+    margin-top: 20vh;
+    background-color:aqua;
+    background-image: url("assets/2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: right;
@@ -242,7 +264,7 @@ section {
 .home .hero h3 {
     font-size: 5rem;
     text-transform: uppercase;
-    color: black;
+    color: #3dd3cb;
 }
 
 .home .hero p {
@@ -267,10 +289,28 @@ section {
     text-align: center;
     transform-origin: top center;
 }
+.Produtos .wrapper .Produtos-card1 {
+    background-color: rgb(173, 12, 12);
+    padding: 2rem 2rem;
+    text-align: center;
+    transform-origin: top center;
+}
+.Produtos.wrapper.Produtos-card1:hover {
+    transform: scaleY(1.1);
+    background-color: var(--black);
+}
 
 .Produtos.wrapper.Produtos-card:hover {
     transform: scaleY(1.1);
     background-color: var(--black);
+}
+.Produtos.wrapper.Produtos-card1:hover *:not(a) {
+    color: var(--main-color);
+
+}
+.Produtos .wrapper .Produtos-card1 img {
+    width: 100%;
+
 }
 
 .Produtos.wrapper.Produtos-card:hover *:not(a) {
@@ -282,11 +322,26 @@ section {
     width: 100%;
 
 }
+.Produtos .wrapper .Produtos-card1 h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.Produtos .wrapper .Produtos-card1 .price {
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+}
 
 .Produtos .wrapper .Produtos-card h3 {
     color: #fff;
     font-size: 2rem;
     padding: 1rem 0;
+}
+.Produtos .wrapper .Produtos-card1 .price span {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: line-through;
 }
 
 .Produtos .wrapper .Produtos-card .price {
@@ -300,6 +355,41 @@ section {
     font-size: 1.5rem;
     text-decoration: line-through;
 }
+/* produtos cart 2*/
+.Produtos .wrapper .Produtos-card2 {
+    background-color: rgb(173, 12, 12);
+    padding: 2rem 2rem;
+    text-align: center;
+    transform-origin: top center;
+}
+.Produtos.wrapper.Produtos-card2:hover {
+    transform: scaleY(1.1);
+    background-color: var(--black);
+}
+.Produtos .wrapper .Produtos-card2 .price span {
+    color: #fff;
+    font-size: 1.5rem;
+    text-decoration: line-through;
+}
+.Produtos.wrapper.Produtos-card2:hover *:not(a) {
+    color: var(--main-color);
+
+}
+.Produtos .wrapper .Produtos-card2 img {
+    width: 100%;
+
+}
+.Produtos .wrapper .Produtos-card2 h3 {
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+.Produtos .wrapper .Produtos-card2 .price {
+    color: #fff;
+    font-size: 1.8rem;
+    padding: 0.5rem 0;
+}
+
 
 /* meedicamentos card */
 
@@ -425,7 +515,7 @@ section {
 }
 /* FOOTER */
 footer{
-    background: rgb(2, 2, 39);
+    background: rgb(56, 56, 243);
     text-align: center;
 }
 .footer .social-midia {
@@ -470,7 +560,7 @@ footer{
 }
 
 body {
-   background:#1b2029 ;
+   background:#3dd3cb ;
    font-weight: 500;
 }
 
