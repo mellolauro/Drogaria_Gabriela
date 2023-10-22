@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
     margin: 0;
 }
 
-.main-login{
+.main-login {
     width: 100vw;
     height: 100vh;
     background-color: white;
@@ -14,7 +14,7 @@
     align-items: center;
 }
 
-.left-login{
+.left-login {
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -23,13 +23,13 @@
     flex-direction: column;
 }
 
-.left-img{
+.left-img {
     width: 35vw;
     border-radius: 25% 10%;
     /*box-shadow: 0px 10px 40px #daf4fb;*/
 }
 
-.right-login{
+.right-login {
     width: 50vw;
     height: 100vh;
     display: flex;
@@ -37,7 +37,7 @@
     align-items: center;
 }
 
-.card-login{
+.card-login {
     width: 60%;
     display: flex;
     justify-content: center;
@@ -49,14 +49,14 @@
     /*box-shadow: 0px 10px 40px #daf4fb;*/
 }
 
-.card-login h1{
+.card-login h1 {
     color: #ad3ecd;
-    font-weight:800;
+    font-weight: 800;
     margin: 0;
     text-transform: uppercase;
 }
 
-.text-field{
+.text-field {
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -65,29 +65,29 @@
     margin: 10px 0px;
 }
 
-.text-field input{
+.text-field input {
     width: 100%;
     border: none;
     border-radius: 10px;
     padding: 15px;
-    background:#daf4fb;
+    background: #daf4fb;
     font-size: 12pt;
     /*box-shadow: 0px 10px 40px #daf4fb;*/
     outline: none;
     box-sizing: border-box;
 }
 
-.text-field label{
+.text-field label {
     color: #daf4fb;
     margin-bottom: 10px;
 }
 
-.text-field input::placeholder{
+.text-field input::placeholder {
     color: black;
-    
+
 }
 
-.btn-login{
+.btn-login {
     width: 30%;
     padding: 16px 0px;
     margin: 25px;
@@ -102,19 +102,19 @@
     /*box-shadow: 0px 10px 40px -12px #daf4fb;*/
 }
 
-small{
+small {
     display: flex;
     color: #daf4fb;
 }
 
-@media only screen and (max-with:950px){
-    .card-login{
+@media only screen and (max-with:950px) {
+    .card-login {
         width: 85%;
     }
 }
 
-@media only screen and (max-with:600px){
-    .main-login{
+@media only screen and (max-with:600px) {
+    .main-login {
         flex-direction: column;
     }
-    }
+}

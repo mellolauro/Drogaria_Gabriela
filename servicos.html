@@ -1,1545 +1,309 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/a80cb970b2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:400&display=swap">
-    <link rel="stylesheet" href="./style/style.css">
-    <script src="./js/script.js" defer></script>
-    <link rel="shortcut icon" href="./assets/logo_dg.jpg.jpg" type="img/x-icon">
-    <title>Drogaria Gabriela</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/34b42a31cc.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="./style/servicos.css">
+    <title>Serviços</title>
 </head>
 
 <body>
-    <header class="header">
-        <a href="" class="logo"><img src="./assets/logo_dg.jpg.jpg"></a>
-        <nav class="navbar">
-            <a href="index.html">Home</a>
-            <a href="medicamentos.html">Medicamentos</a>
-            <a href="servicos.html">Serviços</a>
-            <a href="Contatos.html">Contato</a>
-        </nav>
-        <div class="icons">
-            <div class="search-icon"><i class="fas fa-search"></i></div>
-            <div class="cart-icon"><i class="fas fa-cart-arrow-down"></i></div>
-            <div class="menu-icon"><i class="fas fa-bars"></i></div>
+    <div class="saude"></div>
+    <div class="group-header">
+        <div class="logo-texts">
+            <div class="logo">
+                <svg width="160" height="80" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.212 23.468H.005V.328h16.207v3.85H4.332v5.508h9.7v3.778h-9.7v6.195h11.88v3.809zM26.886 21.973l1.015-4.116c.826.543 1.82 1.014 2.984 1.392 1.174.39 2.295.574 3.374.574 1.153 0 2.116-.256 2.899-.778.783-.523 1.174-1.26 1.174-2.212 0-1.382-.91-2.335-2.74-2.857l-3.343-.983c-3.396-.972-5.099-3.04-5.099-6.194 0-1.864.72-3.45 2.148-4.782C30.726.686 32.715.031 35.275.031c2.74 0 5.13.553 7.172 1.669l-1.27 3.809c-1.734-1.024-3.649-1.526-5.733-1.526-1.238 0-2.2.246-2.867.727-.666.491-1.005 1.136-1.005 1.956 0 .675.201 1.218.603 1.597.402.389 1.016.717 1.862.983l3.3.983c1.926.594 3.333 1.403 4.232 2.447.9 1.044 1.354 2.345 1.354 3.911 0 2.089-.793 3.81-2.37 5.17-1.586 1.363-3.639 2.038-6.167 2.038-1.386 0-2.782-.184-4.2-.563-1.396-.358-2.496-.778-3.3-1.26zM54.867 23.468V.328h9.838c2.137 0 3.915.716 5.343 2.14 1.428 1.433 2.147 3.501 2.147 6.225 0 2.498-.73 4.495-2.2 6-1.46 1.505-3.227 2.263-5.29 2.263h-5.342v6.502h-4.496v.01zm8.897-19.321h-4.39v9.02h4.39c1.079 0 1.989-.41 2.73-1.228.74-.82 1.11-1.895 1.11-3.236 0-1.454-.36-2.57-1.09-3.368-.74-.789-1.65-1.188-2.75-1.188zM80.309 23.468l8.05-23.14h5.173l7.808 23.14h-4.465l-1.512-4.802h-9.035l-1.544 4.802h-4.475zM90.93 4.658L87.481 15.44h6.781L90.93 4.66zM118.351 26.775l.804-3.133c-2.55-.43-4.612-1.68-6.189-3.758-1.565-2.078-2.359-4.73-2.359-7.976 0-3.655.984-6.553 2.952-8.693C115.526 1.075 118.044 0 121.112 0c3.163 0 5.808 1.239 7.945 3.707l-2.317 2.959c-1.682-1.751-3.438-2.622-5.237-2.622-1.967 0-3.512.676-4.623 2.028-1.11 1.351-1.671 3.297-1.671 5.836 0 2.54.561 4.485 1.671 5.836 1.111 1.352 2.656 2.027 4.623 2.027 1.809 0 3.555-.87 5.237-2.62l2.317 2.958c-2.137 2.478-4.782 3.707-7.945 3.707h-.243l-.423 1.669c.211-.072.465-.102.772-.102.825 0 1.46.204 1.915.614.454.41.687.952.687 1.638 0 .82-.317 1.454-.952 1.905-.635.45-1.449.675-2.465.675-.846 0-1.64-.122-2.391-.378l.392-1.465c.73.246 1.343.38 1.862.38 1.026 0 1.544-.349 1.544-1.055 0-.656-.508-.983-1.513-.983-.751 0-1.375.082-1.861.235l-.085-.174zM139.085 11.939c0-3.543.953-6.41 2.846-8.622C143.825 1.106 146.353 0 149.484 0c3.164 0 5.703 1.106 7.628 3.317C159.037 5.53 160 8.407 160 11.94c0 3.512-.963 6.379-2.888 8.57-1.925 2.201-4.464 3.297-7.628 3.297-3.141 0-5.659-1.096-7.553-3.297-1.904-2.202-2.846-5.058-2.846-8.57zm4.422 0c0 2.539.54 4.464 1.619 5.785 1.079 1.31 2.528 1.976 4.358 1.976 1.852 0 3.333-.655 4.433-1.976 1.1-1.31 1.65-3.246 1.65-5.785 0-2.56-.55-4.505-1.65-5.837-1.1-1.33-2.581-1.986-4.433-1.986-1.83 0-3.279.655-4.358 1.976-1.079 1.31-1.619 3.256-1.619 5.847z"
+                        fill="#006374"></path>
+                    <path
+                        d="M55.174 44.192a13.575 13.575 0 00-.529-2.304c-2.581-7.966-12.26-12.39-20.396-8.703-2.73 1.239-4.877 3.102-6.58 5.652-.233-.338-.36-.533-.497-.717-3.777-4.905-8.813-7.024-15.033-5.98-5.765.963-9.838 4.956-11.415 9.748-1.11 3.379-.983 7.147.656 10.536l3.026.03h13.752l4.867-7.372c.222-.327.592-.532.994-.532.117 0 .222.02.339.051.508.144.857.604.846 1.106l-.01 14.54 3.332-7.076c.19-.41.603-.665 1.079-.676l1.883.02H53.83c1.27-2.528 1.767-5.262 1.344-8.323z"
+                        fill="#008F9A"></path>
+                    <path
+                        d="M24.93 66.339a1.18 1.18 0 01-1.334.634c-.508-.112-.835-.573-.825-1.167V49.71l-3.036 4.587c-.127.195-.508.502-.984.502H2.957c1.862 1.946 9.806 10.024 16.154 16.495 3.819 3.891 7.066 7.209 8.06 8.263a.706.706 0 00.509.225.704.704 0 00.529-.235l8.071-8.242c6.316-6.44 14.187-14.489 16.027-16.434H30.335l-5.406 11.468zM61.203 47.95c0-1.24 1.206-2.366 2.37-2.366.815 0 1.28.45 1.555 1.127 1.132 2.518 2.37 3.378 3.65 3.378 1.322 0 2.295-.942 2.295-2.293-.074-1.577-1.48-3.082-3.11-4.362-1.788-1.392-3.385-3.082-3.459-5.191-.074-3.164 2.444-5.908 6.834-5.908 4.115 0 5.713 1.915 5.713 3.154 0 1.392-1.44 2.027-2.413 2.027-.655 0-1.047-.266-1.364-.86-.973-1.956-1.83-2.744-2.91-2.744-1.163 0-2.062.983-2.062 2.14.074 1.28.888 2.447 3.11 4.095 2.063 1.577 3.576 3.348 3.576 5.683 0 3.123-2.37 5.826-7.226 5.826-4.422.01-6.559-2.058-6.559-3.707zM92.517 43.321c-2.412 4.362-5.945 8.345-10.103 8.345-3.11 0-3.417-2.447-2.602-5.457l2.645-9.779c.306-1.167.232-1.69-.582-1.771l-2.328-.225.276-1.096 8.315-1.014.19.185-3.692 13.874c-.465 1.69-.307 2.631.815 2.631 2.327 0 5.596-4.966 7.109-8.386.888-2.027 1.512-4.024 2.644-7.863l4.782-.45-3.999 14.856c-.275 1.014-.275 1.843.466 1.843.973 0 2.528-2.253 3.459-3.799l1.047.635c-1.513 3.01-3.882 5.795-7.3 5.795-2.062 0-2.95-1.505-2.21-4.064l1.206-4.29h-.138v.03zM123.132 32.642l-3.998 14.519c-.307 1.095-.307 1.915.423 1.915.973 0 2.56-2.253 3.417-3.8l1.047.564c-1.513 3.041-3.851 5.826-7.268 5.826-2.295 0-3.025-1.546-2.137-4.546l1.09-3.645-.19-.072c-2.063 3.645-5.248 8.273-9.712 8.273-2.719 0-3.766-2.222-3.766-4.515 0-4.925 4.316-14.816 13.562-14.816 1.047 0 2.095.266 2.793.676l.159-.38h4.58zm-15.889 14.324c0 1.198.391 2.069 1.365 2.069 1.438 0 3.268-2.069 5.278-5.079 1.947-3.01 3.343-6.696 4.042-9.44-.54-.38-1.249-.604-2.063-.604-4.972.01-8.622 9.03-8.622 13.054zM52.846 76.27c0-1.239 1.206-2.365 2.37-2.365.815 0 1.28.45 1.555 1.126 1.132 2.52 2.37 3.38 3.65 3.38 1.322 0 2.296-.943 2.296-2.294-.075-1.577-1.481-3.082-3.11-4.362-1.788-1.392-3.386-3.082-3.46-5.191-.074-3.164 2.444-5.908 6.834-5.908 4.115 0 5.713 1.915 5.713 3.154 0 1.392-1.44 2.027-2.412 2.027-.656 0-1.048-.266-1.365-.86-.973-1.956-1.83-2.744-2.91-2.744-1.163 0-2.062.983-2.062 2.14.074 1.28.889 2.447 3.11 4.095 2.063 1.577 3.576 3.348 3.576 5.683 0 3.123-2.37 5.826-7.226 5.826-4.422.02-6.559-2.048-6.559-3.707zM90.38 60.963L86.38 75.482c-.307 1.096-.307 1.915.423 1.915.974 0 2.56-2.253 3.417-3.799l1.047.563c-1.512 3.041-3.85 5.826-7.267 5.826-2.296 0-3.026-1.546-2.137-4.546l1.09-3.645-.19-.072c-2.064 3.645-5.248 8.273-9.712 8.273-2.719 0-3.766-2.222-3.766-4.515 0-4.925 4.316-14.816 13.562-14.816 1.047 0 2.094.266 2.793.676l.158-.379h4.58zM74.49 75.298c0 1.198.392 2.068 1.365 2.068 1.439 0 3.269-2.068 5.279-5.079 1.947-3.01 3.343-6.696 4.041-9.44-.54-.379-1.248-.604-2.063-.604-4.972 0-8.622 9.03-8.622 13.055zM107.328 71.653c-2.412 4.361-5.946 8.344-10.103 8.344-3.11 0-3.417-2.447-2.602-5.457l2.644-9.778c.307-1.168.233-1.69-.582-1.772l-2.327-.225.275-1.095 8.315-1.014.191.184-3.692 13.874c-.466 1.69-.307 2.632.814 2.632 2.327 0 5.596-4.966 7.109-8.386.889-2.028 1.513-4.024 2.645-7.864l4.781-.45-3.998 14.856c-.275 1.014-.275 1.844.465 1.844.973 0 2.528-2.253 3.459-3.8l1.048.636c-1.513 3.01-3.883 5.795-7.31 5.795-2.063 0-2.952-1.505-2.211-4.065l1.206-4.29h-.127v.03zm2.75-17.94c1.323-1.35 1.979-1.77 2.719-1.77.815 0 1.862 1.167 1.862 2.027 0 .9-1.164 1.618-2.486 2.334l-6.644 3.615-.74-1.014 5.289-5.191zM134.642 75.482c-.275 1.096-.349 1.884.424 1.884.931 0 2.486-2.222 3.385-3.799l1.047.523c-1.481 3.122-3.808 5.907-7.151 5.907-2.327.072-3.227-1.351-2.412-4.29l1.206-4.208h-.116c-2.211 3.87-5.248 8.498-10.029 8.498-3.227 0-4.041-2.518-4.041-4.966 0-4.474 4.041-14.365 13.17-14.365 1.323 0 2.444.225 3.185.635l.074-.041 1.396-5.795c.275-1.055.159-1.434-.624-1.546l-2.137-.267.275-1.054 7.924-.973.232.225-5.808 23.632zm-5.479-3.154c1.83-2.897 3.226-6.727 3.808-9.4-.465-.378-1.322-.675-2.296-.675-5.162 0-8.505 9.031-8.505 12.748 0 1.464.539 2.365 1.629 2.365 1.672 0 3.533-2.181 5.364-5.038zM156.667 74.13c-2.761 4.66-6.337 5.867-9.521 5.867-2.602 0-6.136-1.167-6.136-6.389 0-2.97 1.09-6.164 3.185-8.652 2.137-2.56 5.046-4.29 8.822-4.29 3.269 0 5.406 1.73 5.406 4.137 0 1.126-.232 2.406-1.713 3.727-1.672 1.464-4.465 2.744-10.569 3.911-.042.266-.042.45-.042.788 0 2.366.772 4.516 3.226 4.516 2.561 0 4.465-1.997 6.295-4.475l1.047.86zm-2.719-10.003c0-1.208-.655-1.884-1.745-1.884-2.602 0-5.364 4.25-5.945 8.652 5.278-1.055 7.69-3.952 7.69-6.768z"
+                        fill="#008F9A"></path>
+                </svg>
+            </div>
+            <div class="texts">
+                <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--small">O cuidado que você merece com as pessoas
+                    em que você confia.</h2>
+                <p class="sc-crHlIS ekmaPc pulso-paragraph ">Conte com a nossa equipe especializada para cuidar da sua
+                    saúde. Confira os serviços disponíveis.</p>
+            </div>
+        </div>
+        <div class="ilustration">
+            <img src="./assets/saude-da-familia.png" alt="">
+        </div>
+    </div>
+    <div class="cards-container">
+        <div class="card">
+            <img src="./assets/calendar-days-regular.png" alt="agenda">
         </div>
 
-        <head>
-            <style type="text/css">
-                svg:not(:root).svg-inline--fa {
-                    overflow: visible;
-                }
-
-                .svg-inline--fa {
-                    display: inline-block;
-                    font-size: inherit;
-                    height: 1em;
-                    overflow: visible;
-                    vertical-align: -0.125em;
-                }
-
-                .svg-inline--fa.fa-lg {
-                    vertical-align: -0.225em;
-                }
-
-                .svg-inline--fa.fa-w-1 {
-                    width: 0.0625em;
-                }
-
-                .svg-inline--fa.fa-w-2 {
-                    width: 0.125em;
-                }
-
-                .svg-inline--fa.fa-w-3 {
-                    width: 0.1875em;
-                }
-
-                .svg-inline--fa.fa-w-4 {
-                    width: 0.25em;
-                }
-
-                .svg-inline--fa.fa-w-5 {
-                    width: 0.3125em;
-                }
-
-                .svg-inline--fa.fa-w-6 {
-                    width: 0.375em;
-                }
-
-                .svg-inline--fa.fa-w-7 {
-                    width: 0.4375em;
-                }
-
-                .svg-inline--fa.fa-w-8 {
-                    width: 0.5em;
-                }
-
-                .svg-inline--fa.fa-w-9 {
-                    width: 0.5625em;
-                }
-
-                .svg-inline--fa.fa-w-10 {
-                    width: 0.625em;
-                }
-
-                .svg-inline--fa.fa-w-11 {
-                    width: 0.6875em;
-                }
-
-                .svg-inline--fa.fa-w-12 {
-                    width: 0.75em;
-                }
-
-                .svg-inline--fa.fa-w-13 {
-                    width: 0.8125em;
-                }
-
-                .svg-inline--fa.fa-w-14 {
-                    width: 0.875em;
-                }
-
-                .svg-inline--fa.fa-w-15 {
-                    width: 0.9375em;
-                }
-
-                .svg-inline--fa.fa-w-16 {
-                    width: 1em;
-                }
-
-                .svg-inline--fa.fa-w-17 {
-                    width: 1.0625em;
-                }
-
-                .svg-inline--fa.fa-w-18 {
-                    width: 1.125em;
-                }
-
-                .svg-inline--fa.fa-w-19 {
-                    width: 1.1875em;
-                }
-
-                .svg-inline--fa.fa-w-20 {
-                    width: 1.25em;
-                }
-
-                .svg-inline--fa.fa-pull-left {
-                    margin-right: 0.3em;
-                    width: auto;
-                }
-
-                .svg-inline--fa.fa-pull-right {
-                    margin-left: 0.3em;
-                    width: auto;
-                }
-
-                .svg-inline--fa.fa-border {
-                    height: 1.5em;
-                }
-
-                .svg-inline--fa.fa-li {
-                    width: 2em;
-                }
-
-                .svg-inline--fa.fa-fw {
-                    width: 1.25em;
-                }
-
-                .fa-layers svg.svg-inline--fa {
-                    bottom: 0;
-                    left: 0;
-                    margin: auto;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                }
-
-                .fa-layers {
-                    display: inline-block;
-                    height: 1em;
-                    position: relative;
-                    text-align: center;
-                    vertical-align: -0.125em;
-                    width: 1em;
-                }
-
-                .fa-layers svg.svg-inline--fa {
-                    -webkit-transform-origin: center center;
-                    transform-origin: center center;
-                }
-
-                .fa-layers-counter,
-                .fa-layers-text {
-                    display: inline-block;
-                    position: absolute;
-                    text-align: center;
-                }
-
-                .fa-layers-text {
-                    left: 50%;
-                    top: 50%;
-                    -webkit-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%);
-                    -webkit-transform-origin: center center;
-                    transform-origin: center center;
-                }
-
-                .fa-layers-counter {
-                    background-color: #ff253a;
-                    border-radius: 1em;
-                    -webkit-box-sizing: border-box;
-                    box-sizing: border-box;
-                    color: #fff;
-                    height: 1.5em;
-                    line-height: 1;
-                    max-width: 5em;
-                    min-width: 1.5em;
-                    overflow: hidden;
-                    padding: 0.25em;
-                    right: 0;
-                    text-overflow: ellipsis;
-                    top: 0;
-                    -webkit-transform: scale(0.25);
-                    transform: scale(0.25);
-                    -webkit-transform-origin: top right;
-                    transform-origin: top right;
-                }
-
-                .fa-layers-bottom-right {
-                    bottom: 0;
-                    right: 0;
-                    top: auto;
-                    -webkit-transform: scale(0.25);
-                    transform: scale(0.25);
-                    -webkit-transform-origin: bottom right;
-                    transform-origin: bottom right;
-                }
-
-                .fa-layers-bottom-left {
-                    bottom: 0;
-                    left: 0;
-                    right: auto;
-                    top: auto;
-                    -webkit-transform: scale(0.25);
-                    transform: scale(0.25);
-                    -webkit-transform-origin: bottom left;
-                    transform-origin: bottom left;
-                }
-
-                .fa-layers-top-right {
-                    right: 0;
-                    top: 0;
-                    -webkit-transform: scale(0.25);
-                    transform: scale(0.25);
-                    -webkit-transform-origin: top right;
-                    transform-origin: top right;
-                }
-
-                .fa-layers-top-left {
-                    left: 0;
-                    right: auto;
-                    top: 0;
-                    -webkit-transform: scale(0.25);
-                    transform: scale(0.25);
-                    -webkit-transform-origin: top left;
-                    transform-origin: top left;
-                }
-
-                .fa-lg {
-                    font-size: 1.3333333333em;
-                    line-height: 0.75em;
-                    vertical-align: -0.0667em;
-                }
-
-                .fa-xs {
-                    font-size: 0.75em;
-                }
-
-                .fa-sm {
-                    font-size: 0.875em;
-                }
-
-                .fa-1x {
-                    font-size: 1em;
-                }
-
-                .fa-2x {
-                    font-size: 2em;
-                }
-
-                .fa-3x {
-                    font-size: 3em;
-                }
-
-                .fa-4x {
-                    font-size: 4em;
-                }
-
-                .fa-5x {
-                    font-size: 5em;
-                }
-
-                .fa-6x {
-                    font-size: 6em;
-                }
-
-                .fa-7x {
-                    font-size: 7em;
-                }
-
-                .fa-8x {
-                    font-size: 8em;
-                }
-
-                .fa-9x {
-                    font-size: 9em;
-                }
-
-                .fa-10x {
-                    font-size: 10em;
-                }
-
-                .fa-fw {
-                    text-align: center;
-                    width: 1.25em;
-                }
-
-                .fa-ul {
-                    list-style-type: none;
-                    margin-left: 2.5em;
-                    padding-left: 0;
-                }
-
-                .fa-ul>li {
-                    position: relative;
-                }
-
-                .fa-li {
-                    left: -2em;
-                    position: absolute;
-                    text-align: center;
-                    width: 2em;
-                    line-height: inherit;
-                }
-
-                .fa-border {
-                    border: solid 0.08em #eee;
-                    border-radius: 0.1em;
-                    padding: 0.2em 0.25em 0.15em;
-                }
-
-                .fa-pull-left {
-                    float: left;
-                }
-
-                .fa-pull-right {
-                    float: right;
-                }
-
-                .fa.fa-pull-left,
-                .fas.fa-pull-left,
-                .far.fa-pull-left,
-                .fal.fa-pull-left,
-                .fab.fa-pull-left {
-                    margin-right: 0.3em;
-                }
-
-                .fa.fa-pull-right,
-                .fas.fa-pull-right,
-                .far.fa-pull-right,
-                .fal.fa-pull-right,
-                .fab.fa-pull-right {
-                    margin-left: 0.3em;
-                }
-
-                .fa-spin {
-                    -webkit-animation: fa-spin 2s infinite linear;
-                    animation: fa-spin 2s infinite linear;
-                }
-
-                .fa-pulse {
-                    -webkit-animation: fa-spin 1s infinite steps(8);
-                    animation: fa-spin 1s infinite steps(8);
-                }
-
-                @-webkit-keyframes fa-spin {
-                    0% {
-                        -webkit-transform: rotate(0deg);
-                        transform: rotate(0deg);
-                    }
-
-                    100% {
-                        -webkit-transform: rotate(360deg);
-                        transform: rotate(360deg);
-                    }
-                }
-
-                @keyframes fa-spin {
-                    0% {
-                        -webkit-transform: rotate(0deg);
-                        transform: rotate(0deg);
-                    }
-
-                    100% {
-                        -webkit-transform: rotate(360deg);
-                        transform: rotate(360deg);
-                    }
-                }
-
-                .fa-rotate-90 {
-                    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
-                    -webkit-transform: rotate(90deg);
-                    transform: rotate(90deg);
-                }
-
-                .fa-rotate-180 {
-                    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
-                    -webkit-transform: rotate(180deg);
-                    transform: rotate(180deg);
-                }
-
-                .fa-rotate-270 {
-                    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
-                    -webkit-transform: rotate(270deg);
-                    transform: rotate(270deg);
-                }
-
-                .fa-flip-horizontal {
-                    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
-                    -webkit-transform: scale(-1, 1);
-                    transform: scale(-1, 1);
-                }
-
-                .fa-flip-vertical {
-                    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-                    -webkit-transform: scale(1, -1);
-                    transform: scale(1, -1);
-                }
-
-                .fa-flip-both,
-                .fa-flip-horizontal.fa-flip-vertical {
-                    -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
-                    -webkit-transform: scale(-1, -1);
-                    transform: scale(-1, -1);
-                }
-
-                :root .fa-rotate-90,
-                :root .fa-rotate-180,
-                :root .fa-rotate-270,
-                :root .fa-flip-horizontal,
-                :root .fa-flip-vertical,
-                :root .fa-flip-both {
-                    -webkit-filter: none;
-                    filter: none;
-                }
-
-                .fa-stack {
-                    display: inline-block;
-                    height: 2em;
-                    position: relative;
-                    width: 2.5em;
-                }
-
-                .fa-stack-1x,
-                .fa-stack-2x {
-                    bottom: 0;
-                    left: 0;
-                    margin: auto;
-                    position: absolute;
-                    right: 0;
-                    top: 0;
-                }
-
-                .svg-inline--fa.fa-stack-1x {
-                    height: 1em;
-                    width: 1.25em;
-                }
-
-                .svg-inline--fa.fa-stack-2x {
-                    height: 2em;
-                    width: 2.5em;
-                }
-
-                .fa-inverse {
-                    color: #fff;
-                }
-
-                .sr-only {
-                    border: 0;
-                    clip: rect(0, 0, 0, 0);
-                    height: 1px;
-                    margin: -1px;
-                    overflow: hidden;
-                    padding: 0;
-                    position: absolute;
-                    width: 1px;
-                }
-
-                .sr-only-focusable:active,
-                .sr-only-focusable:focus {
-                    clip: auto;
-                    height: auto;
-                    margin: 0;
-                    overflow: visible;
-                    position: static;
-                    width: auto;
-                }
-
-                .svg-inline--fa .fa-primary {
-                    fill: var(--fa-primary-color, currentColor);
-                    opacity: 1;
-                    opacity: var(--fa-primary-opacity, 1);
-                }
-
-                .svg-inline--fa .fa-secondary {
-                    fill: var(--fa-secondary-color, currentColor);
-                    opacity: 0.4;
-                    opacity: var(--fa-secondary-opacity, 0.4);
-                }
-
-                .svg-inline--fa.fa-swap-opacity .fa-primary {
-                    opacity: 0.4;
-                    opacity: var(--fa-secondary-opacity, 0.4);
-                }
-
-                .svg-inline--fa.fa-swap-opacity .fa-secondary {
-                    opacity: 1;
-                    opacity: var(--fa-primary-opacity, 1);
-                }
-
-                .svg-inline--fa mask .fa-primary,
-                .svg-inline--fa mask .fa-secondary {
-                    fill: black;
-                }
-
-                .fad.fa-inverse {
-                    color: #fff;
-                }
-            </style>
-
-            <head>
-                <meta charset="UTF-8">
-                <meta http-equiv="X-UA-Compatible" content="IE=edge">
-                <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                <script src="https://kit.fontawesome.com/a80cb970b2.js" crossorigin="anonymous"></script>
-                <link rel="stylesheet"
-                    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:400&display=swap">
-                <link rel="stylesheet" href="./style/servicos.css">
-                <script src="./js/servicos.js" defer></script>
-                <link rel="shortcut icon" href="./assets/logo_dg.jpg.jpg" type="img/x-icon">
-                <title>Servicos</title>
-            </head>
-
-        <body>
-            <div class="SearchFilterServicesstyles__SearchFilterServicesStyles-fopbmu-0 dlBWSp">
-                <div class="title-container">
-                    <h2>Conheça os serviços disponíveis</h2>
-                </div>
-                <div class="search-container">
-                    <div class="column column-search-bar">
-                        <div class="SearchSuggestionsstyles__SearchSuggestionStyles-sc-1cwpqzh-0 jQOQNp">
-                            <div class="sc-gSQGeZ kNaBTC pulso-search-bar"><input accesskey="" autocomplete="on"
-                                    autosave="" class="pulso-search-bar__input" data-qa="search"
-                                    data-collect="search_bar_service" form="" formaction="" id="searchService"
-                                    inputmode="text" list="" max="" min="" name="searchService" pattern=""
-                                    placeholder="Busque o serviço desejado" required="" spellcheck="false" src=""
-                                    step="" type="search" width="" value="">
-                                <div class="pulso-search-bar__search">
-                                    <div class="search__frame"><button
-                                            class="sc-gsDJrp cQSMuP pulso-button pulso-button--icon-only pulso-button--small"
-                                            tabindex="0" data-qa="search-service-txt"><span
-                                                class="sc-jRQAMF bpzXao pulso-icon pulso-icon--medium rdicon-search"></span></button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="column column-chips">
-                        <div class="sc-ikJzcn cMzEBQ"><button data-collect="chip_covid_test"
-                                class="sc-kLwgWK dOGhTw"><span class="sc-gWXaA-D juMymR">Testes de
-                                    COVID-19</span></button></div>
-                        <div class="sc-ikJzcn cMzEBQ"><button data-collect="chip_vacine" class="sc-kLwgWK dOGhTw"><span
-                                    class="sc-gWXaA-D juMymR">Vacinas</span></button></div>
-                        <div class="sc-ikJzcn cMzEBQ"><button data-collect="chip_rapid_test"
-                                class="sc-kLwgWK dOGhTw"><span class="sc-gWXaA-D juMymR">Testes laboratoriais
-                                    rápidos</span></button></div>
-                        <div class="sc-ikJzcn cMzEBQ"><button data-collect="chip_service" class="sc-kLwgWK dOGhTw"><span
-                                    class="sc-gWXaA-D juMymR">Serviços farmacêuticos</span></button></div>
+        <div class="card">
+            <img src="./assets/syringe-solid.png" alt="vacina">
+        </div>
+
+        <div class="card">
+            <img src="./assets/stethoscope-solid.png" alt="Teste COVID-19">
+        </div>
+
+        <div class="card">
+            <img src="./assets/microscope-solid.png" alt="Farmacia">
+        </div>
+
+    </div>
+    <div class="title-Container">
+        <h2>Conheça os serviços disponíveis</h2>
+    </div>
+    <div class="search-container">
+        <div class="column column-search-bar">
+            <div class="pulso-search-bar">
+                <div class="SearchSuggestionsstyles__SearchSuggestionStyles-sc-1cwpqzh-0 jQOQNp">
+                    <div class="sc-lbhJmS hDzeUh pulso-search-bar" data-dashlane-rid="f02b4091d1405830" data-form-type>
+                        <input accesskey="" autocomplete="on" autosave="" class="pulso-search-bar__input"
+                            data-qa="search" data-collect="search_bar_service" form="" formaction="" id="searchService"
+                            inputmode="text" list="" max="" min="" name="searchService" pattern=""
+                            placeholder="Busque o serviço desejado" required="" spellcheck="false" src="" step=""
+                            type="search" width="" value="" data-dashlane-rid="47a52efa5cbb232e" data-form-type="">
                     </div>
                 </div>
-                <div class="results-container">
-                    <div
-                        class="FilterResultMobilestyles__FilterResultMobileStyles-sc-1gkcnfb-0 iWBgmy swiper-container swiper-container-initialized swiper-container-horizontal swiper-container-css-mode">
-                        <div class="swiper-wrapper">
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide swiper-slide-active"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 49,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Gripe Tetravalente
-                                    </h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">A vacina tetravalente da gripe é
-                                        indicada para
-                                        imunização ativa e para a prevenção da influenza causada pe...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Gripe Tetravalente"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="column column-chips">
+        <div class="serciceslab">
+            <button data-collect="chip_covid_test" class="sc-testcov" data-dashlane-rid="344b060e2ae9da4c"
+                data-form-type="" data-dashlane-label="true"><span class="sc-cCcYRi ePFhGl">Testes de
+                    COVID-19</span></button>
+
+            <button data-collect="chip_vacine" class="sc-ikJzcn gCmoCo" data-dashlane-rid="7c115f8eb4befbce"
+                data-form-type="" data-dashlane-label="true"><span class="sc-cCcYRi ePFhGl">Vacinas</span>
+            </button>
+
+            <button data-collect="chip_rapid_test" class="sc-ikJzcn gCmoCo" data-dashlane-rid="816fe386581da4b8"
+                data-form-type="" data-dashlane-label="true"><span class="sc-cCcYRi ePFhGl">Testes laboratoriais
+                    rápidos</span>
+            </button>
+
+            <button data-collect="chip_service" class="sc-ikJzcn gCmoCo" data-dashlane-rid="729325ba02df1008"
+                data-form-type="" data-dashlane-label="true"><span class="sc-cCcYRi ePFhGl">Serviços
+                    farmacêuticos</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="results-container">
+        <div class="resultfiltercontainer">
+            <div class="resultfiltercontainer-result_box">
+                <div class="card-service">
+                    <div class="service-result-cards">
+                        <div class="first-row">
+                            <div class="time-price">
+                                <span class="price-time price">R$ 49,90</span>
+                                <span class="price-time time">20 minutos</span>
                             </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide swiper-slide-next"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 228,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Influenza - Efluelda
-                                        (Para
-                                        idosos)</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">A vacina Efluelda contém quatro vezes a
-                                        quantidade de antígeno em comparação com as vacinas Influenza Tetr...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Influenza - Efluelda (Para idosos)"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
+                            <div class="title-description">
+                                <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">Gripe Tetravalente</h2>
+                                <p class="sc-crHlIS ekmaPc pulso-paragraph ">A vacina tetravalente da gripe é indicada
+                                    para
+                                    imunização ativa e para a prevenção da influenza causada pe...</p>
                             </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 760,31</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Herpes Zoster
-                                        (Shingrix)</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Previne o vírus Varicela zoster e sua
-                                        principal
-                                        complicação, a neuropatia pós-herpética, responsável por d...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Herpes Zoster (Shingrix)"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
+                            <div class="buttons-footer" data-service="Gripe Tetravalente">
+                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
+                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
+                                </button>
+                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
+                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
+                                </button>
                             </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 854,99</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">HPV – Gardasil 9</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Vacina Nonavalente - HPV9 previne
-                                        contra 9
-                                        papilomavirus (6, 11, 16, 18, 31, 33, 45, 52 e 58). Sua eficáci...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="HPV – Gardasil 9"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
+
+                            <span class="price-time price">R$ 228,90</span>
+                            <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span>
+                            <span class="price-time time">20 minutos<span class="price-time time">20
+                                    minutos</span></span>
+                            <div class="title-description">
+                                <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">Influenza - Efluelda
+                                    (Para idosos)</h2>
+                                <p class="sc-crHlIS ekmaPc pulso-paragraph ">A vacina Efluelda contém quatro vezes a
+                                    quantidade de antígeno em comparação com as vacinas Influenza Tetr...</p>
                             </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 329,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Pneumonia (13-valente)
-                                    </h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">A vacina pneumocócica conjugada 13
-                                        previne os
-                                        13 sorotipos de doença pneumocócica (incluindo pneumonia e d...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Pneumonia (13-valente)"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
+                            <div class="buttons-footer" data-service="Influenza - Efluelda (Para idosos)">
+                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
+                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
+                                </button>
+                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
+                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
+                                </button>
                             </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 599,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Meningite B</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Previne Meningites e infecções
-                                        generalizadas
-                                        causadas pela bactéria meningococo do tipo B. A vacina deve s...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Meningite B"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
+
+                            <div class="time-price">
+                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span>
+                                <span class="price-time price">R$ 760,31</span>
+                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span>
+                                <span class="price-time time">20 minutos</span>
                             </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 349,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Meningite ACWY</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Vacina que protege contra infecção
-                                        causada
-                                        pelos meningococos pertencentes aos sorogrupos A, C, W e Y . In...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Meningite ACWY"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
+                            <div class="title-description">
+                                <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">Herpes Zoster (Shingrix)
+                                </h2>
+                                <p class="sc-crHlIS ekmaPc pulso-paragraph ">Previne o vírus Varicela zoster e sua
+                                    principal complicação, a neuropatia pós-herpética, responsável por d...</p>
                             </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 364,32</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Dengue - Qdenga</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Previne contra 4 sorotipos vivos do
-                                        vírus
-                                        dengue DEN1, DEN2, DEN3 e DEN4. A vacina está indicada de 4 a 60...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Dengue - Qdenga"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
+                            <div class="buttons-footer" data-service="Herpes Zoster (Shingrix)">
+                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
+                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
+                                </button>
+                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
+                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
+                                </button>
                             </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 159,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Triplice Bacteriana
-                                        acelular
-                                        (dTpa)</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Esta vacina protege contra três doenças
-                                        infecciosas: difteria, tétano e coqueluche. É recomendando o dTpa ...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Triplice Bacteriana acelular (dTpa)"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
+
+                            <div class="time-price">
+                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span>
+                                <span class="price-time price">R$ 854,99</span>
+                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span>
+                                <span class="price-time time">20 minutos</span>
                             </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 629,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">HPV</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">A vacina de HPV protege contra verrugas
-                                        genitais e infecções persistentes, lesões pré-malignas e malignas ...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="HPV"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
+
+                            <div class="title-description">
+                                <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">HPV – Gardasil 9</h2>
+                                <p class="sc-crHlIS ekmaPc pulso-paragraph ">Vacina Nonavalente - HPV9 previne contra 9
+                                    papilomavirus (6, 11, 16, 18, 31, 33, 45, 52 e 58). Sua eficáci...</p>
                             </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 259,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Hepatite A e B</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Previne infecções do fígado (hepatites)
-                                        causadas pelos vírus da Hepatite A e Hepatite B. A vacina deve ser...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Hepatite A e B"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
+                            <div class="buttons-footer" data-service="HPV – Gardasil 9">
+                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
+                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
+                                </button>
+                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
+                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
+                                </button>
                             </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 179,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">30 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Hepatite A Adulto</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Previne infecções do fígado (hepatite)
-                                        causadas
-                                        pelos vírus da Hepatite A. Não precisa de prescrição médic...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Hepatite A Adulto"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
+
+                            <div class="time-price"><span
+                                    class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span>
+                                <span class="price-time price">R$ 329,90</span>
+                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span>
+                                <span class="price-time time">20 minutos</span>
                             </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 119,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">30 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Hepatite A Infantil
-                                    </h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Previne infecções do fígado (hepatite)
-                                        causadas
-                                        pelos vírus da Hepatite A. A partir de 12 meses de idade. ...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Hepatite A Infantil"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
+                            <div class="title-description">
+                                <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">Pneumonia (13-valente)
+                                </h2>
+                                <p class="sc-crHlIS ekmaPc pulso-paragraph ">A vacina pneumocócica conjugada 13 previne
+                                    os 13 sorotipos de doença pneumocócica (incluindo pneumonia e d...</p>
                             </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 119,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Febre Amarela</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">A vacina febre amarela (atenuada) é
-                                        utilizada
-                                        na prevenção da febre amarela, doença causada por um arbovír...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Febre Amarela"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
+                            <div class="buttons-footer" data-service="Pneumonia (13-valente)">
+                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
+                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
+                                </button>
+                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
+                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
+                                </button>
                             </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 86,26</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">30 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Pneumocócica 23</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Vacina 23-valente, previne contra 23
-                                        tipos da
-                                        bactéria pneumococos (Streptococos pneumoniae). Indicada par...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Pneumocócica 23"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
+
+                            <div class="time-price">
+                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span>
+                                <span class="price-time price">R$ 599,90</span>
+                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span>
+                                <span class="price-time time">20 minutos</span>
                             </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 69,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Tríplice Viral
-                                        (Sarampo,
-                                        Caxumba e Rubéola)</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">A vacina Tríplice Viral é indicada para
-                                        proteger contra 3 doenças virais, o Sarampo, Caxumba e Rubéola. A ...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Tríplice Viral (Sarampo, Caxumba e Rubéola)">
+
+                            <div class="title-description">
+                                <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">Meningite B</h2>
+                                <p class="sc-crHlIS ekmaPc pulso-paragraph ">Previne Meningites e infecções
+                                    generalizadas causadas pela bactéria meningococo do tipo B. A vacina deve s...</p>
+                            </div>
+                            <div class="buttons-footer" data-service="Meningite B">
+                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
+                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
+                                </button>
+                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
+                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
+                                </button>
+                            </div>
+
+                            <div class="time-price">
+                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span>
+                                <span class="price-time price">R$ 349,90</span>
+                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span>
+                                <span class="price-time time">20 minutos</span>
+                            </div>
+                            <div class="title-description">
+                                <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">Meningite ACWY</h2>
+                                <p class="sc-crHlIS ekmaPc pulso-paragraph ">Vacina que protege contra infecção causada
+                                    pelos meningococos pertencentes aos sorogrupos A, C, W e Y . In...</p>
+                            </div>
+                            <div class="buttons-footer" data-service="Meningite ACWY">
+                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
+                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
+                                </button>
+                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
+                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
+                                </button>
+                            </div>
+
+                            <div class="time-price">
+                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span>
+                                <span class="price-time price">R$ 364,32</span>
+                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span>
+                                <span class="price-time time">20 minutos</span>
+                            </div>
+
+                            <div class="title-description">
+                                <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">Dengue - Qdenga</h2>
+                                <p class="sc-crHlIS ekmaPc pulso-paragraph ">Previne contra 4 sorotipos vivos do vírus
+                                    dengue DEN1, DEN2, DEN3 e DEN4. A vacina está indicada de 4 a 60...</p>
+                            </div>
+                            <div class="buttons-footer" data-service="Dengue - Qdenga">
+                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
+                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
+                                </button>
+                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
+                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
+                                </button>
+                            </div>
+                            <div class="btn-div-one">
+                                <div class="btn-div-two">
                                     <button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 259,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">30 minutos</span></div>
+                                        class="sc-dkPtyc gLtydx pulso-button pulso-button--secondary pulso-button--medium"
+                                        tabindex="0" data-collect="btn_mais_service" data-testid="btn-mais-servicos">
+                                        <span class="sc-jRQAMF fdcIIM pulso-button__leading-icon">
+                                            <span
+                                                class="sc-gKckTs kNJaHk pulso-icon pulso-icon--medium rdicon-plus"></span>
+                                        </span>
+                                        <span class="sc-hKwCoD jwWlGw">Mais serviços</span>
+                                    </button>
                                 </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Hexavalente</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Indicada para a imunização primária e
-                                        de
-                                        reforço em crianças contra difteria, tétano, coqueluche (pertussi...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Hexavalente"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 229,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">30 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Pentavalente</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Indicada para a prevenção de difteria,
-                                        tétano,
-                                        coqueluche (pertussis), poliomielite e Haemophilus influenz...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Pentavalente"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">Sob Consulta</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">30 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Covid 19 - Antígeno
-                                        nasal</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Teste rápido para detecção do vírus
-                                        entre o 1º
-                                        e 7º dia de sintoma. Verifica se a pessoa está com vírus ...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Covid 19 - Antígeno nasal"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">Sob Consulta</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">30 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Covid 19 - Sorológico
-                                    </h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Teste rápido para detecção de
-                                        anticorpos
-                                        IgM/IgG com mais de 10 dias de sintoma. Verifica se entrou em con...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Covid 19 - Sorológico"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">Sob Consulta</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">30 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Teste COVID Antígeno +
-                                        Influenza A e B</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">O teste de COVID Antígeno + Influenza A
-                                        e B é
-                                        capaz de detectar simultaneamente a presença dos vírus SARS-...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Teste COVID Antígeno + Influenza A e B">
-                                    <button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 35,00</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Teste de Gravidez
-                                        (BHCG)</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Exame de triagem para mulheres, em caso
-                                        de
-                                        suspeita de gravidez. É um exame quantitativo para o hormônio B...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Teste de Gravidez (BHCG)"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 25,00</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Hemoglobina Glicada
-                                    </h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">É um exame quantitativo para detecção
-                                        da
-                                        hemoglobina glicada. A hemoglobina glicada, também conhecida como...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Hemoglobina Glicada"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 69,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">30 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Influenza A e B</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">O Teste Laboratorial Remoto Influenza A
-                                        e B
-                                        serve para detecção qualitativa dos antígenos da Influenza A e...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Influenza A e B"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 39,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">30 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Dengue</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">O Teste Laboratorial Remoto de Dengue
-                                        NS1 serve
-                                        para detecção qualitativa do antígeno do vírus da Dengue e...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Dengue"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 45,00</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Vitamina D</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">É um exame quantitativo para detecção
-                                        de
-                                        vitamina D no sangue, ideal para quem faz suplementação de vitami...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Vitamina D"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 29,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">30 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Tipagem sanguínea</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">O Teste Laboratorial Remoto de Tipagem
-                                        Sanguínea é um processo de coleta e análise do sangue do paciente p...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Tipagem sanguínea"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 160,00</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Anti-Mülleriano</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">É um exame quantitativo para medição do
-                                        hormônio AMH (anti-mulleriano) – hormônio produzido pelos ovários,...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Anti-Mülleriano"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 79,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">30 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Zika IgG e IgM</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">O Teste laboratorial remoto de Zika IgM
-                                        e IgG
-                                        serve para detecção qualitativa de anticorpos IgM e IgG cont...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Zika IgG e IgM"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">Sob Consulta</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">15 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Telefarmácia</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Atendimento/Consulta com o farmacêutico
-                                        para
-                                        auxiliar o cliente com as dúvidas:
-                                        - Dúvidas relacionadas à ...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Telefarmácia"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 15,00</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">15 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Bioimpedância</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">É um exame que avalia a composição
-                                        corporal com
-                                        diversos índices: gordura corporal, gordura visceral, músc...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Bioimpedância"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 15,00</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">15 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Perfuração de Lóbulo
-                                    </h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">A realização da perfuração do lóbulo da
-                                        orelha
-                                        para a colocação de brincos pode ser realizada em adultos e...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Perfuração de Lóbulo"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 8,00</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">10 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Glicemia</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Este serviço, monitora o nível de
-                                        glicose
-                                        sanguínea, para acompanhamento e análise da eficácia do plano al...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Glicemia"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 5,00</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">10 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Pressão Arterial</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">A aferição de pressão é um exame que
-                                        realiza a
-                                        medição da pressão arterial, ou seja, analisa a pressão do ...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Pressão Arterial"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 9,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">15 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Aplicação de Libre
-                                    </h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Este procedimento tem um sensor que
-                                        permite a
-                                        verificação da glicose quantas vezes o paciente quiser por a...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Aplicação de Libre"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 5,00</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">5 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Oximetria</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Este procedimento mede a quantidade de
-                                        oxigenação no sangue e batimentos cardíacos.</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Oximetria"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 4,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Aplicação de
-                                        injetáveis</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Realização da administração de
-                                        medicamentos
-                                        injetáveis e insulinas.</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Aplicação de injetáveis"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 38,00</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Aplicação de
-                                        medicamento
-                                        especiais - 4bio</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Serviço de aplicação de medicamentos
-                                        especiais
-                                        em parceira com a 4Bio</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Aplicação de medicamento especiais - 4bio">
-                                    <button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 24,90</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Orientação
-                                        Farmacêutica de
-                                        Pele</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Através da análise de impedância
-                                        bio-elétrica,
-                                        verificamos o estado de saúde da pele, com indicadores de u...</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Orientação Farmacêutica de Pele"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px; margin-right: 15px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">R$ 20,00</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">20 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Curativo</h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Realização de curativos de pequeno
-                                        porte, em
-                                        lesões de pele.</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Curativo"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
-                            </div>
-                            <div class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED swiper-slide"
-                                style="width: 245.833px;">
-                                <div class="first-row">
-                                    <div class="time-price"><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
-                                            class="price-time price">Sob Consulta</span><span
-                                            class="sc-jRQAMF dIHgvr pulso-icon pulso-icon--small rdicon-clock"></span><span
-                                            class="price-time time">5 minutos</span></div>
-                                </div>
-                                <div class="title-description">
-                                    <h2 class="sc-cTApHj vkxwa pulso-heading pulso-heading--tiny">Temperatura Corporal
-                                    </h2>
-                                    <p class="sc-iqsfdx gboqFC pulso-paragraph ">Serviço de aferição/controle da
-                                        temperatura
-                                        corporal através de um termômetro.</p>
-                                </div>
-                                <div class="buttons-footer" data-service="Temperatura Corporal"><button
-                                        class="sc-gsDJrp hHcHMe pulso-button pulso-button--primary pulso-button--small"
-                                        tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                            class="sc-dkPtyc kBQdKl">Agendar</span></button><button
-                                        class="sc-gsDJrp deNlPz pulso-button pulso-button--white pulso-button--small"
-                                        tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                            class="sc-dkPtyc kBQdKl">Saiba mais</span></button></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </body>
+        </div>
+    </div>
+
+</body>
 
 </html>
