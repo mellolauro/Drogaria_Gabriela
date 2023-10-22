@@ -51,7 +51,7 @@ section {
 }
 
 .title {
-    text-shadow: 2px 2px 0 var(--card-color), -2px -2px 0 var(--card-color), -2px -2px 0 var(--card-color);
+    text-shadow: 2px 2px 0 var(--black), -2px -2px 0 var(--black), -2px -2px 0 var(--black);
     text-align: center;
     color: black;
     text-transform: uppercase;
@@ -64,7 +64,7 @@ section {
 }
 
 .header {
-    background-color: rgb(56, 56, 243);
+    background-color: black;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -515,7 +515,7 @@ video{
 }
 /* FOOTER */
 footer{
-    background: rgb(56, 56, 243);
+    background: black;
     text-align: center;
 }
 .footer .social-midia {
