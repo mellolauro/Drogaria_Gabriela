@@ -8,13 +8,19 @@
     <script src="https://kit.fontawesome.com/a80cb970b2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Nunito:wght@200;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <script src="https://kit.fontawesome.com/34b42a31cc.js" crossorigin="anonymous" defer></script>
     <link rel="stylesheet" href="./style/servicos.css">
+    <script src="./js/servicos.js" defer></script>
     <title>Serviços</title>
 </head>
 
 <body>
+    <header class="header">
+        <a href="./index.html" class="logo"><img src="assets/2.jpg"></a>
+    </header>
     <div class="saude"></div>
     <div class="group-header">
         <div class="logo-texts">
@@ -42,73 +48,52 @@
             <img src="./assets/saude-da-familia.png" alt="">
         </div>
     </div>
+
+    <div class="title-Container">
+        <h2>Conheça os serviços disponíveis</h2>
+    </div>
+    <div class="searche-bar">
+        <div class="search-text">
+            <i class="bi bi-search"></i>
+        </div>
+        <div class="input-text">
+            <input type="text" name="" id="" placeholder="Busque o serviço desejado">
+        </div>
+        <div class="close-text">
+            <i class="bi bi-x-circle"></i>
+        </div>
+    </div>
     <div class="cards-container">
         <div class="card">
             <img src="./assets/calendar-days-regular.png" alt="agenda">
+            <span class="services">Agendar</span>
         </div>
-
         <div class="card">
             <img src="./assets/syringe-solid.png" alt="vacina">
+            <span class="services">Vacinas</span>
         </div>
-
         <div class="card">
             <img src="./assets/stethoscope-solid.png" alt="Teste COVID-19">
+            <span class="services">Testes de covid 19</span>
         </div>
 
         <div class="card">
             <img src="./assets/microscope-solid.png" alt="Farmacia">
+            <span class="services">Serviços farmacêuticos</span>
         </div>
 
-    </div>
-    <div class="title-Container">
-        <h2>Conheça os serviços disponíveis</h2>
-    </div>
-    <div class="search-container">
-        <div class="column column-search-bar">
-            <div class="pulso-search-bar">
-                <div class="SearchSuggestionsstyles__SearchSuggestionStyles-sc-1cwpqzh-0 jQOQNp">
-                    <div class="sc-lbhJmS hDzeUh pulso-search-bar" data-dashlane-rid="f02b4091d1405830" data-form-type>
-                        <input accesskey="" autocomplete="on" autosave="" class="pulso-search-bar__input"
-                            data-qa="search" data-collect="search_bar_service" form="" formaction="" id="searchService"
-                            inputmode="text" list="" max="" min="" name="searchService" pattern=""
-                            placeholder="Busque o serviço desejado" required="" spellcheck="false" src="" step=""
-                            type="search" width="" value="" data-dashlane-rid="47a52efa5cbb232e" data-form-type="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="column column-chips">
-        <div class="serciceslab">
-            <button data-collect="chip_covid_test" class="sc-testcov" data-dashlane-rid="344b060e2ae9da4c"
-                data-form-type="" data-dashlane-label="true"><span class="sc-cCcYRi ePFhGl">Testes de
-                    COVID-19</span></button>
-
-            <button data-collect="chip_vacine" class="sc-ikJzcn gCmoCo" data-dashlane-rid="7c115f8eb4befbce"
-                data-form-type="" data-dashlane-label="true"><span class="sc-cCcYRi ePFhGl">Vacinas</span>
-            </button>
-
-            <button data-collect="chip_rapid_test" class="sc-ikJzcn gCmoCo" data-dashlane-rid="816fe386581da4b8"
-                data-form-type="" data-dashlane-label="true"><span class="sc-cCcYRi ePFhGl">Testes laboratoriais
-                    rápidos</span>
-            </button>
-
-            <button data-collect="chip_service" class="sc-ikJzcn gCmoCo" data-dashlane-rid="729325ba02df1008"
-                data-form-type="" data-dashlane-label="true"><span class="sc-cCcYRi ePFhGl">Serviços
-                    farmacêuticos</span>
-            </button>
-        </div>
-    </div>
-
-    <div class="results-container">
-        <div class="resultfiltercontainer">
-            <div class="resultfiltercontainer-result_box">
-                <div class="card-service">
-                    <div class="service-result-cards">
-                        <div class="first-row">
-                            <div class="time-price">
-                                <span class="price-time price">R$ 49,90</span>
-                                <span class="price-time time">20 minutos</span>
+        <div class="results-container">
+            <div class="FilterResultDeskstyles__FilterResultDesk-sc-1lq5vfb-0 kgyiTV">
+                <div class="FilterResultDeskstyles__ResultBox-sc-1lq5vfb-1 kSKMik">
+                    <div class="cards-service">
+                        <div
+                            class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
+                            <div class="first-row">
+                                <div class="time-price"><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
+                                        class="price-time price">R$ 49,90</span><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span><span
+                                        class="price-time time">20 minutos</span></div>
                             </div>
                             <div class="title-description">
                                 <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">Gripe Tetravalente</h2>
@@ -116,193 +101,187 @@
                                     para
                                     imunização ativa e para a prevenção da influenza causada pe...</p>
                             </div>
-                            <div class="buttons-footer" data-service="Gripe Tetravalente">
-                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
-                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
-                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
-                                </button>
-                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
-                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
-                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
-                                </button>
+                            <div class="buttons-footer" data-service="Gripe Tetravalente"><button
+                                    class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
+                                        class="sc-hKwCoD jwWlGw">Agendar</span></button><button
+                                    class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
+                                        class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
+                        </div>
+                        <div
+                            class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
+                            <div class="first-row">
+                                <div class="time-price"><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
+                                        class="price-time price">R$ 228,90</span><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span><span
+                                        class="price-time time">20 minutos</span></div>
                             </div>
-
-                            <span class="price-time price">R$ 228,90</span>
-                            <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span>
-                            <span class="price-time time">20 minutos<span class="price-time time">20
-                                    minutos</span></span>
                             <div class="title-description">
                                 <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">Influenza - Efluelda
-                                    (Para idosos)</h2>
+                                    (Para
+                                    idosos)</h2>
                                 <p class="sc-crHlIS ekmaPc pulso-paragraph ">A vacina Efluelda contém quatro vezes a
                                     quantidade de antígeno em comparação com as vacinas Influenza Tetr...</p>
                             </div>
-                            <div class="buttons-footer" data-service="Influenza - Efluelda (Para idosos)">
-                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
-                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
-                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
-                                </button>
-                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
-                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
-                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
-                                </button>
-                            </div>
-
-                            <div class="time-price">
-                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span>
-                                <span class="price-time price">R$ 760,31</span>
-                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span>
-                                <span class="price-time time">20 minutos</span>
+                            <div class="buttons-footer" data-service="Influenza - Efluelda (Para idosos)"><button
+                                    class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
+                                        class="sc-hKwCoD jwWlGw">Agendar</span></button><button
+                                    class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
+                                        class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
+                        </div>
+                        <div
+                            class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
+                            <div class="first-row">
+                                <div class="time-price"><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
+                                        class="price-time price">R$ 760,31</span><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span><span
+                                        class="price-time time">20 minutos</span></div>
                             </div>
                             <div class="title-description">
                                 <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">Herpes Zoster (Shingrix)
                                 </h2>
                                 <p class="sc-crHlIS ekmaPc pulso-paragraph ">Previne o vírus Varicela zoster e sua
-                                    principal complicação, a neuropatia pós-herpética, responsável por d...</p>
+                                    principal
+                                    complicação, a neuropatia pós-herpética, responsável por d...</p>
                             </div>
-                            <div class="buttons-footer" data-service="Herpes Zoster (Shingrix)">
-                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
-                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
-                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
-                                </button>
-                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
-                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
-                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
-                                </button>
+                            <div class="buttons-footer" data-service="Herpes Zoster (Shingrix)"><button
+                                    class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
+                                        class="sc-hKwCoD jwWlGw">Agendar</span></button><button
+                                    class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
+                                        class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
+                        </div>
+                        <div
+                            class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
+                            <div class="first-row">
+                                <div class="time-price"><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
+                                        class="price-time price">R$ 854,99</span><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span><span
+                                        class="price-time time">20 minutos</span></div>
                             </div>
-
-                            <div class="time-price">
-                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span>
-                                <span class="price-time price">R$ 854,99</span>
-                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span>
-                                <span class="price-time time">20 minutos</span>
-                            </div>
-
                             <div class="title-description">
                                 <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">HPV – Gardasil 9</h2>
                                 <p class="sc-crHlIS ekmaPc pulso-paragraph ">Vacina Nonavalente - HPV9 previne contra 9
                                     papilomavirus (6, 11, 16, 18, 31, 33, 45, 52 e 58). Sua eficáci...</p>
                             </div>
-                            <div class="buttons-footer" data-service="HPV – Gardasil 9">
-                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
-                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
-                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
-                                </button>
-                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
-                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
-                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
-                                </button>
-                            </div>
-
-                            <div class="time-price"><span
-                                    class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span>
-                                <span class="price-time price">R$ 329,90</span>
-                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span>
-                                <span class="price-time time">20 minutos</span>
+                            <div class="buttons-footer" data-service="HPV – Gardasil 9"><button
+                                    class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
+                                        class="sc-hKwCoD jwWlGw">Agendar</span></button><button
+                                    class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
+                                        class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
+                        </div>
+                        <div
+                            class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
+                            <div class="first-row">
+                                <div class="time-price"><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
+                                        class="price-time price">R$ 329,90</span><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span><span
+                                        class="price-time time">20 minutos</span></div>
                             </div>
                             <div class="title-description">
                                 <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">Pneumonia (13-valente)
                                 </h2>
                                 <p class="sc-crHlIS ekmaPc pulso-paragraph ">A vacina pneumocócica conjugada 13 previne
-                                    os 13 sorotipos de doença pneumocócica (incluindo pneumonia e d...</p>
+                                    os
+                                    13 sorotipos de doença pneumocócica (incluindo pneumonia e d...</p>
                             </div>
-                            <div class="buttons-footer" data-service="Pneumonia (13-valente)">
-                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
-                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
-                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
-                                </button>
-                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
-                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
-                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
-                                </button>
+                            <div class="buttons-footer" data-service="Pneumonia (13-valente)"><button
+                                    class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
+                                        class="sc-hKwCoD jwWlGw">Agendar</span></button><button
+                                    class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
+                                        class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
+                        </div>
+                        <div
+                            class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
+                            <div class="first-row">
+                                <div class="time-price"><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
+                                        class="price-time price">R$ 599,90</span><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span><span
+                                        class="price-time time">20 minutos</span></div>
                             </div>
-
-                            <div class="time-price">
-                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span>
-                                <span class="price-time price">R$ 599,90</span>
-                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span>
-                                <span class="price-time time">20 minutos</span>
-                            </div>
-
                             <div class="title-description">
                                 <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">Meningite B</h2>
                                 <p class="sc-crHlIS ekmaPc pulso-paragraph ">Previne Meningites e infecções
-                                    generalizadas causadas pela bactéria meningococo do tipo B. A vacina deve s...</p>
+                                    generalizadas
+                                    causadas pela bactéria meningococo do tipo B. A vacina deve s...</p>
                             </div>
-                            <div class="buttons-footer" data-service="Meningite B">
-                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
-                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
-                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
-                                </button>
-                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
-                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
-                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
-                                </button>
-                            </div>
-
-                            <div class="time-price">
-                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span>
-                                <span class="price-time price">R$ 349,90</span>
-                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span>
-                                <span class="price-time time">20 minutos</span>
+                            <div class="buttons-footer" data-service="Meningite B"><button
+                                    class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
+                                        class="sc-hKwCoD jwWlGw">Agendar</span></button><button
+                                    class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
+                                        class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
+                        </div>
+                        <div
+                            class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
+                            <div class="first-row">
+                                <div class="time-price"><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
+                                        class="price-time price">R$ 349,90</span><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span><span
+                                        class="price-time time">20 minutos</span></div>
                             </div>
                             <div class="title-description">
                                 <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">Meningite ACWY</h2>
                                 <p class="sc-crHlIS ekmaPc pulso-paragraph ">Vacina que protege contra infecção causada
                                     pelos meningococos pertencentes aos sorogrupos A, C, W e Y . In...</p>
                             </div>
-                            <div class="buttons-footer" data-service="Meningite ACWY">
-                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
-                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
-                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
-                                </button>
-                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
-                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
-                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
-                                </button>
+                            <div class="buttons-footer" data-service="Meningite ACWY"><button
+                                    class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
+                                        class="sc-hKwCoD jwWlGw">Agendar</span></button><button
+                                    class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
+                                        class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
+                        </div>
+                        <div
+                            class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
+                            <div class="first-row">
+                                <div class="time-price"><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
+                                        class="price-time price">R$ 364,32</span><span
+                                        class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span><span
+                                        class="price-time time">20 minutos</span></div>
                             </div>
-
-                            <div class="time-price">
-                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span>
-                                <span class="price-time price">R$ 364,32</span>
-                                <span class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-clock"></span>
-                                <span class="price-time time">20 minutos</span>
-                            </div>
-
                             <div class="title-description">
                                 <h2 class="sc-jObXwK biHOGV pulso-heading pulso-heading--tiny">Dengue - Qdenga</h2>
                                 <p class="sc-crHlIS ekmaPc pulso-paragraph ">Previne contra 4 sorotipos vivos do vírus
                                     dengue DEN1, DEN2, DEN3 e DEN4. A vacina está indicada de 4 a 60...</p>
                             </div>
-                            <div class="buttons-footer" data-service="Dengue - Qdenga">
-                                <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
-                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
-                                    <span class="sc-hKwCoD jwWlGw">Agendar</span>
-                                </button>
-                                <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
-                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
-                                    <span class="sc-hKwCoD jwWlGw">Saiba mais</span>
-                                </button>
-                            </div>
-                            <div class="btn-div-one">
-                                <div class="btn-div-two">
-                                    <button
-                                        class="sc-dkPtyc gLtydx pulso-button pulso-button--secondary pulso-button--medium"
-                                        tabindex="0" data-collect="btn_mais_service" data-testid="btn-mais-servicos">
-                                        <span class="sc-jRQAMF fdcIIM pulso-button__leading-icon">
-                                            <span
-                                                class="sc-gKckTs kNJaHk pulso-icon pulso-icon--medium rdicon-plus"></span>
-                                        </span>
-                                        <span class="sc-hKwCoD jwWlGw">Mais serviços</span>
-                                    </button>
-                                </div>
-                            </div>
+                            <div class="buttons-footer" data-service="Dengue - Qdenga"><button
+                                    class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
+                                    tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
+                                        class="sc-hKwCoD jwWlGw">Agendar</span></button><button
+                                    class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
+                                    tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
+                                        class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
                         </div>
+                    </div>
+                    <div class="btn-div-one">
+                        <div class="btn-div-two"><button
+                                class="sc-dkPtyc gLtydx pulso-button pulso-button--secondary pulso-button--medium"
+                                tabindex="0" data-collect="btn_mais_service" data-testid="btn-mais-servicos"><span
+                                    class="sc-jRQAMF fdcIIM pulso-button__leading-icon"><span
+                                        class="sc-gKckTs kNJaHk pulso-icon pulso-icon--medium rdicon-plus"></span></span><span
+                                    class="sc-hKwCoD jwWlGw">Mais serviços</span></button></div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
 </body>
 
