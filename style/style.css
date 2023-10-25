@@ -77,7 +77,7 @@ section {
 }
 
 .header .logo img {
-    height: 20rem;
+    height: 15rem;
     border-radius: 50%;
 }
 
@@ -537,11 +537,7 @@ video {
 }
 
 /* FOOTER */
-<<<<<<< HEAD
-footer {
-=======
-footer{
->>>>>>> 4e4afe9ea7135864c78e5ee42b76ddd7c6c551a9
+.footer {
     background: black;
     text-align: center;
 }
