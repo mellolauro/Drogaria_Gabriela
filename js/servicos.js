@@ -1,11 +1,13 @@
-let boxsearche = document.querySelector('.searche-bar');
-let look = document.querySelector('.search-text');
-let btnclose = document.querySelector('.close-text');
+const openModalButton = document.querySelector('.fVSzUS');
+const closeModalButton = document.querySelector("#close-modal");
+const modal = document.querySelector("#modal");
+const fade = document.querySelector("#fade");
 
-look.addEventListener('click', () => {
-    boxsearche.classList.add('ativar')
-})
+const toggleModal = () => {
+    modal.classList.toggle("hide");
+    fade.classList.toggle("hide");
+};
 
-btnclose.addEventListener('click', () => {
-    boxsearche.classList.remove('ativar')
+[openModalButton, closeModalButton, fade].forEach((el) => {
+    el.addEventListener("click", () => toggleModal());
 })
