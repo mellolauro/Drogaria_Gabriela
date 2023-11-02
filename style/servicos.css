@@ -117,7 +117,7 @@ body {
 
 .title-Container {
     display: flex;
-    padding: 60px 0px 60px;
+    padding: 20px 0px 20px;
     justify-content: center;
     font-size: 20px;
 }
@@ -126,7 +126,7 @@ body {
 /* Inicio dos Icones */
 
 .cZYBrP {
-    padding: 30px 0px 30px;
+    padding: 20px 0px 20px;
     margin-top: -40px;
     transform: translate(30%, 30%);
     max-width: 1040px;
@@ -191,10 +191,82 @@ i {
 
 /* Fim dos Icones */
 
+.janela-tetra {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00000080;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
 
+.janela-influenza {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00000080;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.janela-herpes {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00000080;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+
+.modal {
+    width: 80px;
+    min-width: 450px;
+    min-height: 200px;
+    background-color: #ffffff96;
+    backdrop-filter: blur(10px);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+.fechar {
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+    border: 0;
+    background-color: red;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.janela-tetra.abrir {
+    display: flex;
+}
+
+.janela-influenza.abrir {
+    display: flex;
+}
+
+.janela-herpes.abrir {
+    display: flex;
+}
 
 .results-container {
-    margin-left: 0px;
+    margin: auto;
+    position: relative;
 }
 
 .kgyiTV {

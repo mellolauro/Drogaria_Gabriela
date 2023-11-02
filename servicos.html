@@ -103,12 +103,11 @@
                                 <span class="sc-hKwCoD jwWlGw">Agendar</span></button>
                             <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
                                 tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
-                                <span class="sc-hKwCoD jwWlGw">Saiba mais</span></button>
-                            <dialog>
-                                <div id="modal-header">
-                                    <h2>Gripe Tetravalente</h2>
-                                </div>
-                                <div class="modal-body">
+                                <span onclick="abrirtetra()" class="sc-hKwCoD jwWlGw">Saiba mais</span></button>
+                            <div class="janela-tetra" id="janela-tetra">
+                                <div class="modal">
+                                    <button class="fechar" id="fechar">X</button>
+                                    <h1>Gripe Tetravalente</h1>
                                     <p>A vacina tetravalente da gripe é indicada para imunização ativa e para a
                                         prevenção da
                                         influenza causada pelos subtipos A e B do vírus. A vacinação pode ser
@@ -121,10 +120,9 @@
                                         deve-se
                                         adiar a
                                         vacinação até que ocorra a melhora. Não é necessária a prescrição
-                                        médica.
-                                    </p>
+                                        médica.</p>
                                 </div>
-                            </dialog>
+                            </div>
                         </div>
                     </div>
                     <div
@@ -148,7 +146,18 @@
                                     class="sc-hKwCoD jwWlGw">Agendar</span></button>
                             <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
                                 tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
-                                <span class="sc-hKwCoD jwWlGw">Saiba mais</span></button>
+                                <span onclick="abrirfluenza()" class="sc-hKwCoD jwWlGw">Saiba mais</span></button>
+                            <div class="janela-influenza" id="janela-influenza">
+                                <div class="modal">
+                                    <button class="fechar" id="fechar">X</button>
+                                    <h1>Influenza - Efluelda (Para idosos)</h1>
+                                    <p>A vacina Efluelda contém quatro vezes a quantidade de antígeno em comparação com
+                                        as vacinas Influenza Tetravalente de dose padrão. Resumidamente, ela contém as
+                                        mesmas cepas da vacina conhecida hoje como Influenza Tetravalente, porém em uma
+                                        concentração mais elevada. É fabricada pela Sanofi Pasteur. Indicada para
+                                        pessoas acima de 60 anos de idade. Não precisa de prescrição médica</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div
@@ -172,8 +181,20 @@
                                 tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
                                     class="sc-hKwCoD jwWlGw">Agendar</span></button><button
                                 class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
-                                tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                    class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
+                                tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
+                                <span onclick="abrirherpes()" class="sc-hKwCoD jwWlGw">Saiba mais</span></button>
+                            <div class="janela-herpes" id="janela-herpes">
+                                <div class="modal">
+                                    <button class="fechar" id="fechar">X</button>
+                                    <h1>Herpes Zoster (Shingrix)</h1>
+                                    <p>Previne o vírus Varicela zoster e sua principal complicação, a neuropatia
+                                        pós-herpética, responsável por dor crônica, prolongada, de difícil controle e
+                                        extremamente debilitante. Esta vacina é recomendada para adultos acima de 50
+                                        anos, ou adultos acima de 18 anos de idade com risco aumentado para Herpes
+                                        Zoster. É obrigatório apresentação de prescrição médica.</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div
                         class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
@@ -194,8 +215,8 @@
                                 tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
                                     class="sc-hKwCoD jwWlGw">Agendar</span></button><button
                                 class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
-                                tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                    class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
+                                tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
+                                <span onclick="abrirhpv()" class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
                     </div>
                     <div
                         class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
@@ -218,8 +239,8 @@
                                 tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
                                     class="sc-hKwCoD jwWlGw">Agendar</span></button><button
                                 class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
-                                tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                    class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
+                                tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
+                                <span onclick="abrirpneum()" class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
                     </div>
                     <div
                         class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
@@ -241,8 +262,8 @@
                                 tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
                                     class="sc-hKwCoD jwWlGw">Agendar</span></button><button
                                 class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
-                                tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                    class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
+                                tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
+                                <span onclick="abrirmening()" class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
                     </div>
                     <div
                         class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
@@ -263,8 +284,8 @@
                                 tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
                                     class="sc-hKwCoD jwWlGw">Agendar</span></button><button
                                 class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
-                                tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                    class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
+                                tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
+                                <span onclick="abriracwy()" class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
                     </div>
                     <div
                         class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
@@ -285,8 +306,8 @@
                                 tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
                                     class="sc-hKwCoD jwWlGw">Agendar</span></button><button
                                 class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
-                                tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais"><span
-                                    class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
+                                tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
+                                <span onclick="abrirdengue()" class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
                     </div>
                 </div>
             </div>
@@ -301,7 +322,6 @@
         </div>
     </div>
     </div>
-
 </body>
 
 </html>
