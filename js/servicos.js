@@ -31,3 +31,13 @@ function abrirherpes() {
     })
 }
 
+function abrirhpv() {
+    const modal = document.getElementById('janela-hpv')
+    modal.classList.add('abrir')
+
+    modal.addEventListener('click', (e) => {
+        if (e.target.id == 'fechar' || e.target.id == 'janela-hpv') {
+            modal.classList.remove('abrir')
+        }
+    })
+}

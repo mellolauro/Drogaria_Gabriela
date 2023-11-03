@@ -227,6 +227,17 @@ i {
     z-index: 999;
 }
 
+.janela-hpv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #00000080;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
 
 .modal {
     width: 80px;
@@ -261,6 +272,10 @@ i {
 }
 
 .janela-herpes.abrir {
+    display: flex;
+}
+
+.janela-hpv.abrir {
     display: flex;
 }
 
