@@ -489,6 +489,17 @@ body {
     border-radius: 4px !important;
 }
 
+.epsAKQ {
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 14px;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}
+
+
 .gVhceE button span {
     display: flex;
     -webkit-box-pack: center;
@@ -649,6 +660,23 @@ body {
     margin: 0px 4px;
 }
 
+.ildNCu svg {
+    display: inline-block;
+}
+
+.fa-1x {
+    font-size: 1em;
+}
+
+.svg-inline--fa {
+    height: 1em;
+    vertical-align: -0.125em;
+}
+
+.svg-inline--fa.fa-w-10 {
+    width: 0.625em;
+}
+
 .cUwXHm .cards {
     -webkit-box-align: stretch;
     align-items: stretch;
@@ -656,4 +684,134 @@ body {
     display: flex;
     -webkit-box-pack: center;
     justify-content: center;
+}
+
+.cUwXHm .cards .footer-callcenter {
+    width: 46%;
+}
+
+.kAKFBV {
+    margin: 4px;
+    font-family: "Open Sans";
+}
+
+.kAKFBV .block-container {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.iSnjnp {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 10px;
+    margin: 0px 5px;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.cUwXHm .cards svg {
+    width: 100%;
+    height: 38px;
+}
+
+.kAKFBV .c-c-title {
+    color: rgb(106, 112, 134);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "Open Sans";
+    padding: 12px 0px;
+}
+
+.kAKFBV .phone-number {
+    margin: 4px 0px;
+    text-align: center;
+    font-weight: 700;
+    color: rgb(44, 46, 56);
+    font-size: 20px;
+}
+
+.kAKFBV .openinghours-txt {
+    color: rgb(106, 112, 134);
+    font-size: 14px;
+    font-family: "Open Sans";
+    padding: 10px 0px;
+    font-weight: 400;
+    line-height: 15.4px;
+}
+
+.cUwXHm .cards .footer-callcenter {
+    width: 46%;
+}
+
+.kAKFBV {
+    margin: 4px;
+    font-family: "Open Sans";
+}
+
+.kAKFBV .block-container {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.iSnjnp {
+    background-color: rgb(255, 255, 255);
+    padding: 20px 10px;
+    margin: 0px 5px;
+    border-radius: 8px;
+    height: 100%;
+}
+
+.cUwXHm .cards svg {
+    width: 100%;
+    height: 38px;
+}
+
+.kOocMh {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    margin: 18px;
+    border-radius: 6px;
+    padding: 1.5rem 10px;
+}
+
+.gkJtUk:last-child {
+    margin-bottom: 0px;
+}
+
+.gkJtUk {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+.gkJtUk p {
+    font-weight: 600;
+    line-height: 16px;
+    color: rgb(67, 146, 162);
+}
+
+.bSeQsa {
+    color: rgb(106, 112, 134);
+    font-family: "Open Sans";
+    font-size: 12px;
+    font-weight: 400;
+    width: 50%;
+    margin: 20px 25% 15px;
+}
+
+.bSeQsa p {
+    color: rgb(106, 112, 134);
+    line-height: 20px;
 }
