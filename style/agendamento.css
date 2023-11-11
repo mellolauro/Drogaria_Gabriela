@@ -23,7 +23,7 @@ body {
 }
 
 .kZAZeC {
-    margin: 0px 10px;
+    margin: 10px 10px;
 }
 
 .kZAZeC h2 {
@@ -34,6 +34,11 @@ body {
     font-weight: 700;
     color: rgb(113, 118, 142);
     margin-bottom: 10px;
+}
+
+.fgsoKO .raia div>h2+div {
+    border-color: rgb(113, 118, 142);
+    border-radius: 8px;
 }
 
 .kZAZeC .card {
@@ -285,6 +290,11 @@ body {
     font-weight: 700;
 }
 
+.fgsoKO div.itens.foreign input {
+    margin-bottom: 6px;
+    margin-right: 8px;
+}
+
 .jBOouE .itens .h0 {
     height: initial;
 }
@@ -316,6 +326,12 @@ body {
     line-height: 24px;
 }
 
+.toggler {
+    font-size: 24px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
 .MhFah .toggler {
     position: relative;
     height: 24px;
@@ -330,7 +346,7 @@ body {
     width: 24px;
 }
 
-.iBiQfc.pulso-icon {
+.iBiQfc.pulso-icon .i {
     color: rgb(255, 255, 255);
     display: inline-block;
     text-align: center;
