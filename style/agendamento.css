@@ -189,7 +189,7 @@ body {
 }
 
 .bwixqP .steps-bg.steps-mobile {
-    display: none;
+    display: flex;
 }
 
 .bwixqP .steps-mobile {
@@ -309,6 +309,10 @@ body {
     margin-bottom: 10px;
 }
 
+.MhFah .accordion-header:hover {
+    cursor: pointer;
+}
+
 .MhFah .accordion-header {
     background: rgb(0, 120, 139);
     color: rgb(255, 255, 255);
@@ -330,6 +334,7 @@ body {
     font-size: 24px;
     color: rgb(255, 255, 255);
     cursor: pointer;
+
 }
 
 .MhFah .toggler {
@@ -357,6 +362,10 @@ body {
     transition: all 0.3s ease 0s;
     display: none;
 }
+
+.csXfiY.expanded {
+    display: block;
+    }
 
 .bhjShg {
     transition: all 0.3s ease 0s;
@@ -397,12 +406,9 @@ body {
 }
 
 .bhjShg .item-information .item-header {
+    display: flex;
     -webkit-box-pack: start;
     justify-content: flex-start;
-}
-
-.bhjShg .item-information .item-header {
-    display: flex;
 }
 
 .bhjShg .item-information .item-header .item-title {
