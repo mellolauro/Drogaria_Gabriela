@@ -12,14 +12,28 @@
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/34b42a31cc.js" crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/34b42a31cc.js" crossorigin="anonymous" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./style/servicos.css">
+    <script src="./js/sugestoes.js" defer></script>
     <script src="./js/servicos.js" defer></script>
     <title>Serviços</title>
 </head>
 
 <body>
     <header class="header">
+        <h2>Barra de Pesquisa</h2>
         <a href="./index.html" class="logo"><img src="assets/2.jpg"></a>
+        <div class="container">
+            <h2>Barra de Pesquisa</h2>
+            <div class="search">
+                <a href="" target="_blank" hidden></a>
+                <input type="search" placeholder="Pesquisar....">
+                <div class="list"></div>
+                <div class="icon"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+        </div>
     </header>
     <div class="saude"></div>
     <div class="group-header">
@@ -64,13 +78,13 @@
                 <i class="fa-solid fa-syringe"></i>
             </div><span class="text">Vacinas</span>
         </div>
-        <div class="HealthHubIconsBoxstyles__HealthHubIconsBoxStyles-sc-7g082k-0 bTufJZ">
+        <div class="bTufJZ">
             <div class="icon-box">
                 <i class="fa-solid fa-stethoscope"></i>
             </div>
             <span class="text">Testes Rápidos e COVID-19</span>
         </div>
-        <div class="HealthHubIconsBoxstyles__HealthHubIconsBoxStyles-sc-7g082k-0 bTufJZ">
+        <div class="bTufJZ">
             <div class="icon-box">
                 <i class="fa-solid fa-microscope"></i>
             </div><span class="text">Serviços Farmacêuticos</span>
@@ -80,11 +94,10 @@
     <!--Fim dos icones-->
 
     <div class="results-container">
-        <div class="FilterResultDeskstyles__FilterResultDesk-sc-1lq5vfb-0 kgyiTV">
-            <div class="FilterResultDeskstyles__ResultBox-sc-1lq5vfb-1 kSKMik">
+        <div class="kgyiTV">
+            <div class="kSKMik">
                 <div class="cards-service">
-                    <div
-                        class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
+                    <div class="jpcxED service-result-card">
                         <div class="first-row">
                             <div class="time-price"><span
                                     class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
@@ -100,8 +113,7 @@
                         <div class="buttons-footer" data-service="Gripe Tetravalente">
                             <button class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
                                 tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar">
-                                <span class="sc-hKwCoD jwWlGw"><a href="./agendamento.html"
-                                        class="agenda-link">Agendar</a></span></button>
+                                <span class="sc-hKwCoD jwWlGw"><a href="./agendamento.html">Agendar</a></span></button>
                             <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
                                 tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
                                 <span onclick="abrirtetra()" class="sc-hKwCoD jwWlGw">Saiba mais</span></button>
@@ -180,8 +192,7 @@
                         <div class="buttons-footer" data-service="Herpes Zoster (Shingrix)"><button
                                 class="sc-dkPtyc cJmrHH pulso-button pulso-button--primary pulso-button--small"
                                 tabindex="0" data-collect="btn_schedule_service" data-testid="btn-agendar"><span
-                                    class="sc-hKwCoD jwWlGw"><a href="./agendamento.html"
-                                        class="agenda-link">Agendar</a></span></button>
+                                    class="sc-hKwCoD jwWlGw"><a href="./agendamento.html">Agendar</a></span></button>
                             <button class="sc-dkPtyc fVSzUS pulso-button pulso-button--white pulso-button--small"
                                 tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
                                 <span onclick="abrirherpes()" class="sc-hKwCoD jwWlGw">Saiba mais</span></button>
@@ -198,8 +209,7 @@
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
+                    <div class="jpcxED service-result-card">
                         <div class="first-row">
                             <div class="time-price"><span
                                     class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
@@ -232,8 +242,7 @@
                             </div>
                         </div>
                     </div>
-                    <div
-                        class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
+                    <div class="jpcxED service-result-card">
                         <div class="first-row">
                             <div class="time-price"><span
                                     class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
@@ -256,8 +265,7 @@
                                 tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
                                 <span onclick="abrirpneum()" class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
                     </div>
-                    <div
-                        class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
+                    <div class="jpcxED service-result-card">
                         <div class="first-row">
                             <div class="time-price"><span
                                     class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
@@ -279,8 +287,7 @@
                                 tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
                                 <span onclick="abrirmening()" class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
                     </div>
-                    <div
-                        class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
+                    <div class="jpcxED service-result-card">
                         <div class="first-row">
                             <div class="time-price"><span
                                     class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
@@ -301,8 +308,7 @@
                                 tabindex="0" data-collect="btn_know_more" data-testid="btn-saiba-mais">
                                 <span onclick="abriracwy()" class="sc-hKwCoD jwWlGw">Saiba mais</span></button></div>
                     </div>
-                    <div
-                        class="FilterServicesResultCardstyles__CardContainerStyles-sc-149da1l-0 jpcxED service-result-card">
+                    <div class="jpcxED service-result-card">
                         <div class="first-row">
                             <div class="time-price"><span
                                     class="sc-gKckTs grXOkn pulso-icon pulso-icon--small rdicon-coin-transfer"></span><span
@@ -328,6 +334,48 @@
         </div>
     </div>
     </div>
+    <footer>
+        <div id="footer_content">
+            <div id="footer_contacts">
+                <p>
+                    It's all about your dreams.</p>
+
+                <div id="footer_social_media">
+                    <a href="#" class="footer-link" id="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="footer-link" id="Whatsapp">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+
+                </div>
+            </div>
+
+            <ul>
+
+            </ul>
+            <div id="footer_subscribe">
+                <h3>Subcribe</h3>
+                <p>
+                    Enter your to get notified about
+                    our news solutions
+                </p>
+                <div id="input_group">
+                    <input type="email" id="email">
+                    <button>
+                        <i class="fa-regular fa-envelope"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="footer_copyright">
+            &#169
+            2023 all right reservet
+        </div>
+    </footer>
 </body>
 
 </html>
